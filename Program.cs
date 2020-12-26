@@ -1,64 +1,43 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace HelloWord
+namespace ConsoleApp1Retangoli
 {
     class Program
 
+        /* scrivere 
+         * - chieda all'utente due numeri
+         * - stampi su schermo il valore minore e poi quello maggiore
+         * - stampi su schermo la somma tra i due
+         * */
+
     {
         static void Main(string[] args)
-        {
+
+        { 
+            Console
+
+
+
+
+
+
+
+
 
             /*
-            string nome = "Riccardo";
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine("Giulio");
-            Console.WriteLine("Riccardo");  */
+        {
+            Console.WriteLine("Inserisci la lunghezza");
+            string lunghezza = Console.ReadLine();
 
-            //Prendere valori  inputUtente
+            Console.WriteLine("Inserisci la larghezza");
+            string larghezza = Console.ReadLine();
 
+            int lunghezzaInt = int.Parse(lunghezza);
+            int larghezzaInt = int.Parse(larghezza);
 
-            /* Console.WriteLine("Juljan");
+            int perimetro = lunghezzaInt
 
-              string valore = "Juljan";
-             Console.WriteLine(valore);
-
-              string inputUtente = Console.ReadLine();
-             Console.WriteLine(inputUtente); */
-
-
-             Console.WriteLine("Benvenuto");
-
-                 Console.WriteLine("Come ti Chiami ?");
-                 string username = Console.ReadLine();
-                    Console.WriteLine(username);
-
-                 Console.WriteLine("Che giorno è ?");
-                 string giorno = Console.ReadLine();
-                 Console.WriteLine(giorno);
-
-                 Console.ReadKey(); 
-
-           /* Console.WriteLine("Benvenuto");
-
-            Console.WriteLine("Metti un numero!");
-            string numero = Console.ReadLine();
-            Console.WriteLine("numero");
-            
-            Console.ReadKey(); */
-
-          
+            */
         }
     }
-
-   
-
 }
