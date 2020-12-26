@@ -1,64 +1,44 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloWord
+namespace ConsoleApplicationsTDPC12
 {
     class Program
-
     {
+        /*
+             Scrivere un programma che:
+                 - chieda all'utente due numeri
+                 - scriva sullo schermo i risultati delle
+                 seguenti operazioni tra i due numeri:
+                     - addizione
+                     - sottrazione
+                     - moltiplicazione
+                     - divisione
+         */
         static void Main(string[] args)
         {
+            Console.WriteLine("Inserisci il primo numero");
+            string number1AsString = Console.ReadLine();
+            decimal number1AsDecimal = decimal.Parse(number1AsString);
 
-            /*
-            string nome = "Riccardo";
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine("Giulio");
-            Console.WriteLine("Riccardo");  */
+            Console.WriteLine("Inserisci il secondo numero");
+            string number2AsString = Console.ReadLine();
+            decimal number2AsDecimal = decimal.Parse(number2AsString);
 
-            //Prendere valori  inputUtente
+            decimal addizione = number1AsDecimal + number2AsDecimal;
+            decimal sottrazione = number1AsDecimal - number2AsDecimal;
+            decimal moltiplicazione = number1AsDecimal * number2AsDecimal;
+            decimal divisione = number1AsDecimal / number2AsDecimal;
 
+            Console.WriteLine(number1AsString + " + " + number2AsString + " = " + addizione);
+            Console.WriteLine(number1AsString + " - " + number2AsString + " = " + sottrazione);
+            Console.WriteLine(number1AsString + " * " + number2AsString + " = " + moltiplicazione);
+            Console.WriteLine(number1AsString + " / " + number2AsString + " = " + divisione);
 
-            /* Console.WriteLine("Juljan");
-
-              string valore = "Juljan";
-             Console.WriteLine(valore);
-
-              string inputUtente = Console.ReadLine();
-             Console.WriteLine(inputUtente); */
-
-
-             Console.WriteLine("Benvenuto");
-
-                 Console.WriteLine("Come ti Chiami ?");
-                 string username = Console.ReadLine();
-                    Console.WriteLine(username);
-
-                 Console.WriteLine("Che giorno è ?");
-                 string giorno = Console.ReadLine();
-                 Console.WriteLine(giorno);
-
-                 Console.ReadKey(); 
-
-           /* Console.WriteLine("Benvenuto");
-
-            Console.WriteLine("Metti un numero!");
-            string numero = Console.ReadLine();
-            Console.WriteLine("numero");
-            
-            Console.ReadKey(); */
-
-          
+            Console.ReadKey();
         }
     }
-
-   
-
 }
