@@ -1,64 +1,25 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloWord
+namespace ConsoleApplicationsTDPC12
 {
     class Program
-
     {
+        /*
+         Scrivere un programma che:
+            - Dia il benvenuto all'utente
+            - Chieda all'utente un numero
+            - Stampi sullo schermo il risultato di "numero + 1"
+         */
         static void Main(string[] args)
         {
-
-            /*
-            string nome = "Riccardo";
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine(nome);
-            Console.WriteLine("Giulio");
-            Console.WriteLine("Riccardo");  */
-
-            //Prendere valori  inputUtente
-
-
-            /* Console.WriteLine("Juljan");
-
-              string valore = "Juljan";
-             Console.WriteLine(valore);
-
-              string inputUtente = Console.ReadLine();
-             Console.WriteLine(inputUtente); */
-
-
-             Console.WriteLine("Benvenuto");
-
-                 Console.WriteLine("Come ti Chiami ?");
-                 string username = Console.ReadLine();
-                    Console.WriteLine(username);
-
-                 Console.WriteLine("Che giorno è ?");
-                 string giorno = Console.ReadLine();
-                 Console.WriteLine(giorno);
-
-                 Console.ReadKey(); 
-
-           /* Console.WriteLine("Benvenuto");
-
-            Console.WriteLine("Metti un numero!");
-            string numero = Console.ReadLine();
-            Console.WriteLine("numero");
-            
-            Console.ReadKey(); */
-
-          
+            Console.WriteLine("Benvenuto utente");
+            string stringa = Console.ReadLine();
+            int numero = int.Parse(stringa);
+            Console.WriteLine(numero + 1);
         }
     }
-
-   
-
 }
